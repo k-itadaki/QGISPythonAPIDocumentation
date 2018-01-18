@@ -1,25 +1,25 @@
 .. package: qgis\.core
 
-Subgroup: G
+Subgroup: Gps
 
-Class: QgsGPSDetector
+Class: QgsGpsDetector
 ...............................................
 
-.. py:module:: QgsGPSDetector
+.. py:module:: QgsGpsDetector
 
-.. autoclass:: qgis.core.QgsGPSDetector
+.. autoclass:: qgis.core.QgsGpsDetector
    :members:
    :undoc-members:
    :show-inheritance:
 
     .. rubric:: Methods
 
-    .. autoautosummary:: qgis.core.QgsGPSDetector
+    .. autoautosummary:: qgis.core.QgsGpsDetector
         :methods:
         :nosignatures:
 
     .. rubric:: Attributes
 
-    .. autoautosummary:: qgis.core.QgsGPSDetector
+    .. autoautosummary:: qgis.core.QgsGpsDetector
         :attributes:
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class: QgsGPSDetector</title>
+  <title>Class: QgsNmeaConnection</title>
   
 
   
@@ -36,9 +36,9 @@
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="" href="../../../index.html"/>
-        <link rel="up" title="G" href="index.html"/>
-        <link rel="next" title="Class: QgsGPSInformation" href="QgsGPSInformation.html"/>
-        <link rel="prev" title="Class: QgsGPSConnectionRegistry" href="QgsGPSConnectionRegistry.html"/> 
+        <link rel="up" title="other" href="index.html"/>
+        <link rel="next" title="Class: QgsNullSymbolRenderer" href="QgsNullSymbolRenderer.html"/>
+        <link rel="prev" title="Class: QgsNativeMetadataValidator" href="QgsNativeMetadataValidator.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">G</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSInformation.html">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gps/index.html">Gps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnectionRegistry.html">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -903,114 +903,115 @@
 <li class="toctree-l3"><a class="reference internal" href="../Zip/QgsZipUtils.html">Class: QgsZipUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../other/index.html">other</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsAggregateCalculator.html">Class: QgsAggregateCalculator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsAnimatedIcon.html">Class: QgsAnimatedIcon</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsApplication.html">Class: QgsApplication</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsArchive.html">Class: QgsArchive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsArrowSymbolLayer.html">Class: QgsArrowSymbolLayer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBearingUtils.html">Class: QgsBearingUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBilinearRasterResampler.html">Class: QgsBilinearRasterResampler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBlurEffect.html">Class: QgsBlurEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBox3d.html">Class: QgsBox3d</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBrightnessContrastFilter.html">Class: QgsBrightnessContrastFilter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsBrowserModel.html">Class: QgsBrowserModel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCacheIndexFeatureId.html">Class: QgsCacheIndexFeatureId</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCadUtils.html">Class: QgsCadUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCategorizedSymbolRenderer.html">Class: QgsCategorizedSymbolRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCentroidFillSymbolLayer.html">Class: QgsCentroidFillSymbolLayer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCircle.html">Class: QgsCircle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCircularString.html">Class: QgsCircularString</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsClipToMinMaxEnhancement.html">Class: QgsClipToMinMaxEnhancement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsClipper.html">Class: QgsClipper</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCompoundCurve.html">Class: QgsCompoundCurve</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsConstWkbPtr.html">Class: QgsConstWkbPtr</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCsException.html">Class: QgsCsException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCubicRasterResampler.html">Class: QgsCubicRasterResampler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsCustomColorScheme.html">Class: QgsCustomColorScheme</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDartMeasurement.html">Class: QgsDartMeasurement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDatabaseFilterProxyModel.html">Class: QgsDatabaseFilterProxyModel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDatumTransform.html">Class: QgsDatumTransform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDistanceArea.html">Class: QgsDistanceArea</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDrawSourceEffect.html">Class: QgsDrawSourceEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDropShadowEffect.html">Class: QgsDropShadowEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsDxfExport.html">Class: QgsDxfExport</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsEditorWidgetSetup.html">Class: QgsEditorWidgetSetup</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsEllipsoidUtils.html">Class: QgsEllipsoidUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsException.html">Class: QgsException</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsFallbackFieldFormatter.html">Class: QgsFallbackFieldFormatter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsFavoritesItem.html">Class: QgsFavoritesItem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsFeedback.html">Class: QgsFeedback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsFields.html">Class: QgsFields</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsFilledMarkerSymbolLayer.html">Class: QgsFilledMarkerSymbolLayer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsGenericNumericTransformer.html">Class: QgsGenericNumericTransformer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsGlowEffect.html">Class: QgsGlowEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsGplColorScheme.html">Class: QgsGplColorScheme</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsGpsdConnection.html">Class: QgsGpsdConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsGraduatedSymbolRenderer.html">Class: QgsGraduatedSymbolRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsHeatmapRenderer.html">Class: QgsHeatmapRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsHillshadeRenderer.html">Class: QgsHillshadeRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsHueSaturationFilter.html">Class: QgsHueSaturationFilter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsIntRange.html">Class: QgsIntRange</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsInterval.html">Class: QgsInterval</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsInvertedPolygonRenderer.html">Class: QgsInvertedPolygonRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsKeyValueFieldFormatter.html">Class: QgsKeyValueFieldFormatter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsLimitedRandomColorRamp.html">Class: QgsLimitedRandomColorRamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsLinearlyInterpolatedDiagramRenderer.html">Class: QgsLinearlyInterpolatedDiagramRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsListFieldFormatter.html">Class: QgsListFieldFormatter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsLogger.html">Class: QgsLogger</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsMargins.html">Class: QgsMargins</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsMasterLayoutInterface.html">Class: QgsMasterLayoutInterface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsOfflineEditing.html">Class: QgsOfflineEditing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsOgcUtils.html">Class: QgsOgcUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsOuterGlowEffect.html">Class: QgsOuterGlowEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsOwsConnection.html">Class: QgsOwsConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPainting.html">Class: QgsPainting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPalettedRasterRenderer.html">Class: QgsPalettedRasterRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPathResolver.html">Class: QgsPathResolver</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPieDiagram.html">Class: QgsPieDiagram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPolygon.html">Class: QgsPolygon</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPresetSchemeColorRamp.html">Class: QgsPresetSchemeColorRamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPrintLayout.html">Class: QgsPrintLayout</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsProxyFeatureSink.html">Class: QgsProxyFeatureSink</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsPythonRunner.html">Class: QgsPythonRunner</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRandomColorRamp.html">Class: QgsRandomColorRamp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsReadWriteContext.html">Class: QgsReadWriteContext</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRecentColorScheme.html">Class: QgsRecentColorScheme</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRectangle.html">Class: QgsRectangle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRegularPolygon.html">Class: QgsRegularPolygon</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRunProcess.html">Class: QgsRunProcess</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsRuntimeProfiler.html">Class: QgsRuntimeProfiler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSatelliteInfo.html">Class: QgsSatelliteInfo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsScopeLogger.html">Class: QgsScopeLogger</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsScopedExpressionFunction.html">Class: QgsScopedExpressionFunction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSettings.html">Class: QgsSettings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsShadowEffect.html">Class: QgsShadowEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsShapeburstFillSymbolLayer.html">Class: QgsShapeburstFillSymbolLayer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSimplifyMethod.html">Class: QgsSimplifyMethod</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSizeScaleTransformer.html">Class: QgsSizeScaleTransformer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSpatialIndex.html">Class: QgsSpatialIndex</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsStyle.html">Class: QgsStyle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsSurface.html">Class: QgsSurface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTolerance.html">Class: QgsTolerance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTracer.html">Class: QgsTracer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTrackedVectorLayerTools.html">Class: QgsTrackedVectorLayerTools</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTransformEffect.html">Class: QgsTransformEffect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsTriangle.html">Class: QgsTriangle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsUnitTypes.html">Class: QgsUnitTypes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsWmsLegendNode.html">Class: QgsWmsLegendNode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsXmlUtils.html">Class: QgsXmlUtils</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">other</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="QgsAggregateCalculator.html">Class: QgsAggregateCalculator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsAnimatedIcon.html">Class: QgsAnimatedIcon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsApplication.html">Class: QgsApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsArchive.html">Class: QgsArchive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsArrowSymbolLayer.html">Class: QgsArrowSymbolLayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBearingUtils.html">Class: QgsBearingUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBilinearRasterResampler.html">Class: QgsBilinearRasterResampler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBlurEffect.html">Class: QgsBlurEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBox3d.html">Class: QgsBox3d</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBrightnessContrastFilter.html">Class: QgsBrightnessContrastFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsBrowserModel.html">Class: QgsBrowserModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCacheIndexFeatureId.html">Class: QgsCacheIndexFeatureId</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCadUtils.html">Class: QgsCadUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCategorizedSymbolRenderer.html">Class: QgsCategorizedSymbolRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCentroidFillSymbolLayer.html">Class: QgsCentroidFillSymbolLayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCircle.html">Class: QgsCircle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCircularString.html">Class: QgsCircularString</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsClipToMinMaxEnhancement.html">Class: QgsClipToMinMaxEnhancement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsClipper.html">Class: QgsClipper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCompoundCurve.html">Class: QgsCompoundCurve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsConstWkbPtr.html">Class: QgsConstWkbPtr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCsException.html">Class: QgsCsException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCubicRasterResampler.html">Class: QgsCubicRasterResampler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsCustomColorScheme.html">Class: QgsCustomColorScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDartMeasurement.html">Class: QgsDartMeasurement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDatabaseFilterProxyModel.html">Class: QgsDatabaseFilterProxyModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDatumTransform.html">Class: QgsDatumTransform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDistanceArea.html">Class: QgsDistanceArea</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDrawSourceEffect.html">Class: QgsDrawSourceEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDropShadowEffect.html">Class: QgsDropShadowEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsDxfExport.html">Class: QgsDxfExport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsEditorWidgetSetup.html">Class: QgsEditorWidgetSetup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsEllipsoidUtils.html">Class: QgsEllipsoidUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsException.html">Class: QgsException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsFallbackFieldFormatter.html">Class: QgsFallbackFieldFormatter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsFavoritesItem.html">Class: QgsFavoritesItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsFeedback.html">Class: QgsFeedback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsFields.html">Class: QgsFields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsFilledMarkerSymbolLayer.html">Class: QgsFilledMarkerSymbolLayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGenericNumericTransformer.html">Class: QgsGenericNumericTransformer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGlowEffect.html">Class: QgsGlowEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGplColorScheme.html">Class: QgsGplColorScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGpsdConnection.html">Class: QgsGpsdConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGraduatedSymbolRenderer.html">Class: QgsGraduatedSymbolRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsHeatmapRenderer.html">Class: QgsHeatmapRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsHillshadeRenderer.html">Class: QgsHillshadeRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsHueSaturationFilter.html">Class: QgsHueSaturationFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsIntRange.html">Class: QgsIntRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsInterval.html">Class: QgsInterval</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsInvertedPolygonRenderer.html">Class: QgsInvertedPolygonRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsKeyValueFieldFormatter.html">Class: QgsKeyValueFieldFormatter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsLimitedRandomColorRamp.html">Class: QgsLimitedRandomColorRamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsLinearlyInterpolatedDiagramRenderer.html">Class: QgsLinearlyInterpolatedDiagramRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsListFieldFormatter.html">Class: QgsListFieldFormatter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsLogger.html">Class: QgsLogger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMargins.html">Class: QgsMargins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMasterLayoutInterface.html">Class: QgsMasterLayoutInterface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Class: QgsNmeaConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsOfflineEditing.html">Class: QgsOfflineEditing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsOgcUtils.html">Class: QgsOgcUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsOuterGlowEffect.html">Class: QgsOuterGlowEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsOwsConnection.html">Class: QgsOwsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPainting.html">Class: QgsPainting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPalettedRasterRenderer.html">Class: QgsPalettedRasterRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPathResolver.html">Class: QgsPathResolver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPieDiagram.html">Class: QgsPieDiagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPolygon.html">Class: QgsPolygon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPresetSchemeColorRamp.html">Class: QgsPresetSchemeColorRamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPrintLayout.html">Class: QgsPrintLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsProxyFeatureSink.html">Class: QgsProxyFeatureSink</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsPythonRunner.html">Class: QgsPythonRunner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRandomColorRamp.html">Class: QgsRandomColorRamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsReadWriteContext.html">Class: QgsReadWriteContext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRecentColorScheme.html">Class: QgsRecentColorScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRectangle.html">Class: QgsRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRegularPolygon.html">Class: QgsRegularPolygon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRunProcess.html">Class: QgsRunProcess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsRuntimeProfiler.html">Class: QgsRuntimeProfiler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSatelliteInfo.html">Class: QgsSatelliteInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsScopeLogger.html">Class: QgsScopeLogger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsScopedExpressionFunction.html">Class: QgsScopedExpressionFunction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSettings.html">Class: QgsSettings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsShadowEffect.html">Class: QgsShadowEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsShapeburstFillSymbolLayer.html">Class: QgsShapeburstFillSymbolLayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSimplifyMethod.html">Class: QgsSimplifyMethod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSizeScaleTransformer.html">Class: QgsSizeScaleTransformer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSpatialIndex.html">Class: QgsSpatialIndex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsStyle.html">Class: QgsStyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTestUtils.html">Class: QgsTestUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTolerance.html">Class: QgsTolerance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTracer.html">Class: QgsTracer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTrackedVectorLayerTools.html">Class: QgsTrackedVectorLayerTools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTransformEffect.html">Class: QgsTransformEffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTriangle.html">Class: QgsTriangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsUnitTypes.html">Class: QgsUnitTypes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsWmsLegendNode.html">Class: QgsWmsLegendNode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsXmlUtils.html">Class: QgsXmlUtils</a></li>
 </ul>
 </li>
 </ul>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1671,15 +1672,15 @@
         
           <li><a href="../index.html">core</a> &raquo;</li>
         
-          <li><a href="index.html">G</a> &raquo;</li>
+          <li><a href="index.html">other</a> &raquo;</li>
         
-      <li>Class: QgsGPSDetector</li>
+      <li>Class: QgsNmeaConnection</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/api/core/G/QgsGPSDetector.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/api/core/other/QgsNmeaConnection.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -1692,44 +1693,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>Subgroup: G</p>
-<div class="section" id="module-QgsGPSDetector">
-<span id="class-qgsgpsdetector"></span><h1>Class: QgsGPSDetector<a class="headerlink" href="#module-QgsGPSDetector" title="Permalink to this headline">¶</a></h1>
+  <p>Subgroup: other</p>
+<div class="section" id="module-QgsNmeaConnection">
+<span id="class-qgsnmeaconnection"></span><h1>Class: QgsNmeaConnection<a class="headerlink" href="#module-QgsNmeaConnection" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="qgis.core.QgsGPSDetector">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsGPSDetector</code><a class="headerlink" href="#qgis.core.QgsGPSDetector" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">PyQt5.QtCore.QObject</span></code></p>
-<p>Class to detect the GPS port</p>
-<blockquote>
-<div><p class="rubric">Methods</p>
+<dt id="qgis.core.QgsNmeaConnection">
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsNmeaConnection</code><span class="sig-paren">(</span><em>device: QIODevice</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.QgsGpsConnection</span></code></p>
+<p>Constructs a QgsNmeaConnection with given <code class="docutils literal"><span class="pre">device</span></code>.</p>
+<p>Evaluates NMEA sentences coming from a GPS device</p>
+<div class="versionadded">
+<p class="rubric"><span class="versionmodified">New in version 1.4: </span>Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.advance" title="qgis.core.QgsGPSDetector.advance"><code class="xref py py-obj docutils literal"><span class="pre">advance</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.availablePorts" title="qgis.core.QgsGPSDetector.availablePorts"><code class="xref py py-obj docutils literal"><span class="pre">availablePorts</span></code></a></td>
-<td></td>
-</tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">blockSignals</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.childEvent" title="qgis.core.QgsGPSDetector.childEvent"><code class="xref py py-obj docutils literal"><span class="pre">childEvent</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.childEvent" title="qgis.core.QgsNmeaConnection.childEvent"><code class="xref py py-obj docutils literal"><span class="pre">childEvent</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">children</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.connDestroyed" title="qgis.core.QgsGPSDetector.connDestroyed"><code class="xref py py-obj docutils literal"><span class="pre">connDestroyed</span></code></a></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></td>
+<td>Closes connection to device</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></td>
+<td>Opens connection to device</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.connectNotify" title="qgis.core.QgsNmeaConnection.connectNotify"><code class="xref py py-obj docutils literal"><span class="pre">connectNotify</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.connectNotify" title="qgis.core.QgsGPSDetector.connectNotify"><code class="xref py py-obj docutils literal"><span class="pre">connectNotify</span></code></a></td>
-<td></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">currentGPSInformation</span></code></td>
+<td>Returns the current gps information (lat, lon, etc.)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.customEvent" title="qgis.core.QgsGPSDetector.customEvent"><code class="xref py py-obj docutils literal"><span class="pre">customEvent</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.customEvent" title="qgis.core.QgsNmeaConnection.customEvent"><code class="xref py py-obj docutils literal"><span class="pre">customEvent</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">deleteLater</span></code></td>
@@ -1738,7 +1740,7 @@
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">disconnect</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.disconnectNotify" title="qgis.core.QgsGPSDetector.disconnectNotify"><code class="xref py py-obj docutils literal"><span class="pre">disconnectNotify</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.disconnectNotify" title="qgis.core.QgsNmeaConnection.disconnectNotify"><code class="xref py py-obj docutils literal"><span class="pre">disconnectNotify</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">dumpObjectInfo</span></code></td>
@@ -1768,7 +1770,7 @@
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">installEventFilter</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.isSignalConnected" title="qgis.core.QgsGPSDetector.isSignalConnected"><code class="xref py py-obj docutils literal"><span class="pre">isSignalConnected</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.isSignalConnected" title="qgis.core.QgsNmeaConnection.isSignalConnected"><code class="xref py py-obj docutils literal"><span class="pre">isSignalConnected</span></code></a></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">isWidgetType</span></code></td>
@@ -1792,32 +1794,56 @@
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">parent</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">property</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.parseData" title="qgis.core.QgsNmeaConnection.parseData"><code class="xref py py-obj docutils literal"><span class="pre">parseData</span></code></a></td>
+<td>Parse available data source content</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processGgaSentence" title="qgis.core.QgsNmeaConnection.processGgaSentence"><code class="xref py py-obj docutils literal"><span class="pre">processGgaSentence</span></code></a></td>
+<td>process GGA sentence</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processGsaSentence" title="qgis.core.QgsNmeaConnection.processGsaSentence"><code class="xref py py-obj docutils literal"><span class="pre">processGsaSentence</span></code></a></td>
+<td>process GSA sentence</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processGsvSentence" title="qgis.core.QgsNmeaConnection.processGsvSentence"><code class="xref py py-obj docutils literal"><span class="pre">processGsvSentence</span></code></a></td>
+<td>process GSV sentence</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processRmcSentence" title="qgis.core.QgsNmeaConnection.processRmcSentence"><code class="xref py py-obj docutils literal"><span class="pre">processRmcSentence</span></code></a></td>
+<td>process RMC sentence</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processStringBuffer" title="qgis.core.QgsNmeaConnection.processStringBuffer"><code class="xref py py-obj docutils literal"><span class="pre">processStringBuffer</span></code></a></td>
+<td>Splits mStringBuffer into sentences and calls libnmea</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.processVtgSentence" title="qgis.core.QgsNmeaConnection.processVtgSentence"><code class="xref py py-obj docutils literal"><span class="pre">processVtgSentence</span></code></a></td>
+<td>process VTG sentence</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">property</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">pyqtConfigure</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">pyqtConfigure</span></code></td>
 <td>Each keyword argument is either the name of a Qt property or a Qt signal.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.receivers" title="qgis.core.QgsGPSDetector.receivers"><code class="xref py py-obj docutils literal"><span class="pre">receivers</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.receivers" title="qgis.core.QgsNmeaConnection.receivers"><code class="xref py py-obj docutils literal"><span class="pre">receivers</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">removeEventFilter</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">removeEventFilter</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.sender" title="qgis.core.QgsGPSDetector.sender"><code class="xref py py-obj docutils literal"><span class="pre">sender</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.sender" title="qgis.core.QgsNmeaConnection.sender"><code class="xref py py-obj docutils literal"><span class="pre">sender</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.senderSignalIndex" title="qgis.core.QgsGPSDetector.senderSignalIndex"><code class="xref py py-obj docutils literal"><span class="pre">senderSignalIndex</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.senderSignalIndex" title="qgis.core.QgsNmeaConnection.senderSignalIndex"><code class="xref py py-obj docutils literal"><span class="pre">senderSignalIndex</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setObjectName</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setObjectName</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setParent</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setParent</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setProperty</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setProperty</span></code></td>
 <td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setSource</span></code></td>
+<td>Sets the GPS source.</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">signalsBlocked</span></code></td>
 <td></td>
@@ -1825,13 +1851,16 @@
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">startTimer</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">thread</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">status</span></code></td>
+<td>Returns the status.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">thread</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.timerEvent" title="qgis.core.QgsGPSDetector.timerEvent"><code class="xref py py-obj docutils literal"><span class="pre">timerEvent</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsNmeaConnection.timerEvent" title="qgis.core.QgsNmeaConnection.timerEvent"><code class="xref py py-obj docutils literal"><span class="pre">timerEvent</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">tr</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">tr</span></code></td>
 <td></td>
 </tr>
 </tbody>
@@ -1843,94 +1872,121 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">Connected</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">DataReceived</span></code></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">GPSDataReceived</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">NotConnected</span></code></td>
+<td></td>
+</tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">destroyed</span></code></td>
 <td>destroyed(self, QObject = None) [signal]</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.detected" title="qgis.core.QgsGPSDetector.detected"><code class="xref py py-obj docutils literal"><span class="pre">detected</span></code></a></td>
-<td>detected(self, QgsGPSConnection) [signal]</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">nmeaSentenceReceived</span></code></td>
+<td>nmeaSentenceReceived(self, str) [signal]</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSDetector.detectionFailed" title="qgis.core.QgsGPSDetector.detectionFailed"><code class="xref py py-obj docutils literal"><span class="pre">detectionFailed</span></code></a></td>
-<td>detectionFailed(self) [signal]</td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">objectNameChanged</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">objectNameChanged</span></code></td>
 <td>objectNameChanged(self, str) [signal]</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">stateChanged</span></code></td>
+<td>stateChanged(self, QgsGpsInformation) [signal]</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">staticMetaObject</span></code></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
+</div>
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.advance">
-<code class="descname">advance</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.advance" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.childEvent">
+<code class="descname">childEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.childEvent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.availablePorts">
-<code class="descname">availablePorts</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[Tuple[str, str]]<a class="headerlink" href="#qgis.core.QgsGPSDetector.availablePorts" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.connectNotify">
+<code class="descname">connectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.connectNotify" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.childEvent">
-<code class="descname">childEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.childEvent" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.customEvent">
+<code class="descname">customEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.customEvent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.connDestroyed">
-<code class="descname">connDestroyed</code><span class="sig-paren">(</span><em>self</em>, <em>QObject</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.connDestroyed" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.disconnectNotify">
+<code class="descname">disconnectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.disconnectNotify" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.connectNotify">
-<code class="descname">connectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.connectNotify" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.isSignalConnected">
+<code class="descname">isSignalConnected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.isSignalConnected" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.customEvent">
-<code class="descname">customEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.customEvent" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSDetector.detected">
-<code class="descname">detected</code><a class="headerlink" href="#qgis.core.QgsGPSDetector.detected" title="Permalink to this definition">¶</a></dt>
-<dd><p>detected(self, QgsGPSConnection) [signal]</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSDetector.detectionFailed">
-<code class="descname">detectionFailed</code><a class="headerlink" href="#qgis.core.QgsGPSDetector.detectionFailed" title="Permalink to this definition">¶</a></dt>
-<dd><p>detectionFailed(self) [signal]</p>
+<dt id="qgis.core.QgsNmeaConnection.parseData">
+<code class="descname">parseData</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.parseData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse available data source content</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.disconnectNotify">
-<code class="descname">disconnectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.disconnectNotify" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.processGgaSentence">
+<code class="descname">processGgaSentence</code><span class="sig-paren">(</span><em>self</em>, <em>data: str</em>, <em>len: int</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processGgaSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>process GGA sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.processGsaSentence">
+<code class="descname">processGsaSentence</code><span class="sig-paren">(</span><em>self</em>, <em>data: str</em>, <em>len: int</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processGsaSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>process GSA sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.processGsvSentence">
+<code class="descname">processGsvSentence</code><span class="sig-paren">(</span><em>self</em>, <em>data: str</em>, <em>len: int</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processGsvSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>process GSV sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.processRmcSentence">
+<code class="descname">processRmcSentence</code><span class="sig-paren">(</span><em>self</em>, <em>data: str</em>, <em>len: int</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processRmcSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>process RMC sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.processStringBuffer">
+<code class="descname">processStringBuffer</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processStringBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Splits mStringBuffer into sentences and calls libnmea</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.processVtgSentence">
+<code class="descname">processVtgSentence</code><span class="sig-paren">(</span><em>self</em>, <em>data: str</em>, <em>len: int</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.processVtgSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>process VTG sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsNmeaConnection.receivers">
+<code class="descname">receivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.receivers" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.isSignalConnected">
-<code class="descname">isSignalConnected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.isSignalConnected" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.sender">
+<code class="descname">sender</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.sender" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.receivers">
-<code class="descname">receivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.receivers" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.senderSignalIndex">
+<code class="descname">senderSignalIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.senderSignalIndex" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="qgis.core.QgsGPSDetector.sender">
-<code class="descname">sender</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="qgis.core.QgsGPSDetector.senderSignalIndex">
-<code class="descname">senderSignalIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.senderSignalIndex" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="qgis.core.QgsGPSDetector.timerEvent">
-<code class="descname">timerEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGPSDetector.timerEvent" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsNmeaConnection.timerEvent">
+<code class="descname">timerEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsNmeaConnection.timerEvent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1947,10 +2003,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="QgsGPSInformation.html" class="btn btn-neutral float-right" title="Class: QgsGPSInformation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="QgsNullSymbolRenderer.html" class="btn btn-neutral float-right" title="Class: QgsNullSymbolRenderer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="QgsGPSConnectionRegistry.html" class="btn btn-neutral" title="Class: QgsGPSConnectionRegistry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="QgsNativeMetadataValidator.html" class="btn btn-neutral" title="Class: QgsNativeMetadataValidator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1959,7 +2015,7 @@
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

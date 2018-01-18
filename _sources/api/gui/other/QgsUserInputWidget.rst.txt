@@ -2,24 +2,24 @@
 
 Subgroup: other
 
-Class: QgsUserInputDockWidget
+Class: QgsUserInputWidget
 ...............................................
 
-.. py:module:: QgsUserInputDockWidget
+.. py:module:: QgsUserInputWidget
 
-.. autoclass:: qgis.gui.QgsUserInputDockWidget
+.. autoclass:: qgis.gui.QgsUserInputWidget
    :members:
    :undoc-members:
    :show-inheritance:
 
     .. rubric:: Methods
 
-    .. autoautosummary:: qgis.gui.QgsUserInputDockWidget
+    .. autoautosummary:: qgis.gui.QgsUserInputWidget
         :methods:
         :nosignatures:
 
     .. rubric:: Attributes
 
-    .. autoautosummary:: qgis.gui.QgsUserInputDockWidget
+    .. autoautosummary:: qgis.gui.QgsUserInputWidget
         :attributes:
 

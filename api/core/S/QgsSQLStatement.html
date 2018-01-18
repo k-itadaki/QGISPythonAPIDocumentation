@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../G/index.html">G</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSDetector.html">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSInformation.html">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gps/index.html">Gps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnectionRegistry.html">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -964,8 +964,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsNmeaConnection.html">Class: QgsNmeaConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
@@ -1001,6 +1001,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStyle.html">Class: QgsStyle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsTestUtils.html">Class: QgsTestUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTolerance.html">Class: QgsTolerance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1697,8 +1698,11 @@
 <span id="class-qgssqlstatement"></span><h1>Class: QgsSQLStatement<a class="headerlink" href="#module-QgsSQLStatement" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsSQLStatement</code><a class="headerlink" href="#qgis.core.QgsSQLStatement" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsSQLStatement</code><span class="sig-paren">(</span><em>statement: str</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">sip.wrapper</span></code></p>
+<p>Creates a new statement based on the provided string.</p>
+<p>QgsSQLStatement(other: QgsSQLStatement)
+Create a copy of this statement.</p>
 <p>Class for parsing SQL statements.</p>
 <div class="versionadded">
 <p class="rubric"><span class="versionmodified">New in version 2.16: </span>Methods</p>
@@ -1973,8 +1977,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeBetweenOperator">
-<em class="property">class </em><code class="descname">NodeBetweenOperator</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeBetweenOperator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeBetweenOperator</code><span class="sig-paren">(</span><em>node: QgsSQLStatement.Node</em>, <em>minVal: QgsSQLStatement.Node</em>, <em>maxVal: QgsSQLStatement.Node</em>, <em>notBetween: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeBetweenOperator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeBetweenOperator(QgsSQLStatement.NodeBetweenOperator)</p>
 <p>‘X BETWEEN y and z’ operator *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeBetweenOperator.accept">
@@ -2024,8 +2030,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeBinaryOperator">
-<em class="property">class </em><code class="descname">NodeBinaryOperator</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeBinaryOperator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeBinaryOperator</code><span class="sig-paren">(</span><em>op: QgsSQLStatement.BinaryOperator</em>, <em>opLeft: QgsSQLStatement.Node</em>, <em>opRight: QgsSQLStatement.Node</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeBinaryOperator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeBinaryOperator(QgsSQLStatement.NodeBinaryOperator)</p>
 <p>Binary logical/arithmetical operator (AND, OR, =, +, …) *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeBinaryOperator.accept">
@@ -2081,8 +2089,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeCast">
-<em class="property">class </em><code class="descname">NodeCast</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeCast" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeCast</code><span class="sig-paren">(</span><em>node: QgsSQLStatement.Node</em>, <em>type: str</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeCast" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeCast(QgsSQLStatement.NodeCast)</p>
 <p>CAST operator *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeCast.accept">
@@ -2120,8 +2130,12 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeColumnRef">
-<em class="property">class </em><code class="descname">NodeColumnRef</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeColumnRef" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeColumnRef</code><span class="sig-paren">(</span><em>name: str</em>, <em>star: bool</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeColumnRef" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor with column name only</p>
+<p>QgsSQLStatement.NodeColumnRef(tableName: str, name: str, star: bool)
+Constructor with table and column name</p>
+<p>QgsSQLStatement.NodeColumnRef(QgsSQLStatement.NodeColumnRef)</p>
 <p>Reference to a column *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeColumnRef.accept">
@@ -2183,8 +2197,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeColumnSorted">
-<em class="property">class </em><code class="descname">NodeColumnSorted</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeColumnSorted" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeColumnSorted</code><span class="sig-paren">(</span><em>column: QgsSQLStatement.NodeColumnRef</em>, <em>asc: bool</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeColumnSorted" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeColumnSorted(QgsSQLStatement.NodeColumnSorted)</p>
 <p>Column in a ORDER BY *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeColumnSorted.accept">
@@ -2228,8 +2244,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeFunction">
-<em class="property">class </em><code class="descname">NodeFunction</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeFunction" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeFunction</code><span class="sig-paren">(</span><em>name: str</em>, <em>args: QgsSQLStatement.NodeList</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeFunction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeFunction(QgsSQLStatement.NodeFunction)</p>
 <p>Function with a name and arguments node *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeFunction.accept">
@@ -2267,8 +2285,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeInOperator">
-<em class="property">class </em><code class="descname">NodeInOperator</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeInOperator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeInOperator</code><span class="sig-paren">(</span><em>node: QgsSQLStatement.Node</em>, <em>list: QgsSQLStatement.NodeList</em>, <em>notin: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeInOperator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeInOperator(QgsSQLStatement.NodeInOperator)</p>
 <p>‘x IN (y, z)’ operator *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeInOperator.accept">
@@ -2312,8 +2332,12 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeJoin">
-<em class="property">class </em><code class="descname">NodeJoin</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeJoin" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeJoin</code><span class="sig-paren">(</span><em>tabledef: QgsSQLStatement.NodeTableDef</em>, <em>onExpr: QgsSQLStatement.Node</em>, <em>type: QgsSQLStatement.JoinType</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeJoin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor with table definition, ON expression</p>
+<p>QgsSQLStatement.NodeJoin(tabledef: QgsSQLStatement.NodeTableDef, usingColumns: Iterable[str], type: QgsSQLStatement.JoinType)
+Constructor with table definition and USING columns</p>
+<p>QgsSQLStatement.NodeJoin(QgsSQLStatement.NodeJoin)</p>
 <p>Join definition *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeJoin.accept">
@@ -2371,6 +2395,8 @@ Ownership is transferred to the caller.</p>
 <dt id="qgis.core.QgsSQLStatement.NodeList">
 <em class="property">class </em><code class="descname">NodeList</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeList" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">sip.wrapper</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeList(QgsSQLStatement.NodeList)</p>
 <p>List of nodes *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeList.accept">
@@ -2412,8 +2438,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeLiteral">
-<em class="property">class </em><code class="descname">NodeLiteral</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeLiteral" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeLiteral</code><span class="sig-paren">(</span><em>value: Any</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeLiteral" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeLiteral(QgsSQLStatement.NodeLiteral)</p>
 <p>Literal value (integer, integer64, double, string) *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeLiteral.accept">
@@ -2445,8 +2473,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeSelect">
-<em class="property">class </em><code class="descname">NodeSelect</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeSelect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeSelect</code><span class="sig-paren">(</span><em>tableList: object</em>, <em>columns: object</em>, <em>distinct: bool</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeSelect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeSelect(QgsSQLStatement.NodeSelect)</p>
 <p>SELECT node *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeSelect.accept">
@@ -2532,8 +2562,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeSelectedColumn">
-<em class="property">class </em><code class="descname">NodeSelectedColumn</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeSelectedColumn" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeSelectedColumn</code><span class="sig-paren">(</span><em>node: QgsSQLStatement.Node</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeSelectedColumn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeSelectedColumn(QgsSQLStatement.NodeSelectedColumn)</p>
 <p>Selected column *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeSelectedColumn.accept">
@@ -2583,8 +2615,12 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeTableDef">
-<em class="property">class </em><code class="descname">NodeTableDef</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeTableDef" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeTableDef</code><span class="sig-paren">(</span><em>name: str</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeTableDef" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor with table name</p>
+<p>QgsSQLStatement.NodeTableDef(name: str, alias: str)
+Constructor with table name and alias</p>
+<p>QgsSQLStatement.NodeTableDef(QgsSQLStatement.NodeTableDef)</p>
 <p>Table definition *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeTableDef.accept">
@@ -2634,8 +2670,10 @@ Ownership is transferred to the caller.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsSQLStatement.NodeUnaryOperator">
-<em class="property">class </em><code class="descname">NodeUnaryOperator</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeUnaryOperator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">NodeUnaryOperator</code><span class="sig-paren">(</span><em>op: QgsSQLStatement.UnaryOperator</em>, <em>operand: QgsSQLStatement.Node</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsSQLStatement.NodeUnaryOperator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Node</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.NodeUnaryOperator(QgsSQLStatement.NodeUnaryOperator)</p>
 <p>Unary logicial/arithmetical operator ( NOT, - ) *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.NodeUnaryOperator.accept">
@@ -2675,6 +2713,8 @@ Ownership is transferred to the caller.</p>
 <dt id="qgis.core.QgsSQLStatement.RecursiveVisitor">
 <em class="property">class </em><code class="descname">RecursiveVisitor</code><a class="headerlink" href="#qgis.core.QgsSQLStatement.RecursiveVisitor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.Visitor</span></code></p>
+<p>Constructor</p>
+<p>QgsSQLStatement.RecursiveVisitor(QgsSQLStatement.RecursiveVisitor)</p>
 <p>A visitor that recursively explores all children *</p>
 <dl class="method">
 <dt id="qgis.core.QgsSQLStatement.RecursiveVisitor.visit">
@@ -3080,7 +3120,7 @@ API calls, dump() will be used to create one instead.</p>
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

@@ -1,0 +1,25 @@
+.. package: qgis\.core
+
+Subgroup: Gps
+
+Class: QgsGpsConnection
+...............................................
+
+.. py:module:: QgsGpsConnection
+
+.. autoclass:: qgis.core.QgsGpsConnection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+    .. rubric:: Methods
+
+    .. autoautosummary:: qgis.core.QgsGpsConnection
+        :methods:
+        :nosignatures:
+
+    .. rubric:: Attributes
+
+    .. autoautosummary:: qgis.core.QgsGpsConnection
+        :attributes:
+

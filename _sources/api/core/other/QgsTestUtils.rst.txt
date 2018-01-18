@@ -1,25 +1,25 @@
 .. package: qgis\.core
 
-Subgroup: G
+Subgroup: other
 
-Class: QgsGPSConnection
+Class: QgsTestUtils
 ...............................................
 
-.. py:module:: QgsGPSConnection
+.. py:module:: QgsTestUtils
 
-.. autoclass:: qgis.core.QgsGPSConnection
+.. autoclass:: qgis.core.QgsTestUtils
    :members:
    :undoc-members:
    :show-inheritance:
 
     .. rubric:: Methods
 
-    .. autoautosummary:: qgis.core.QgsGPSConnection
+    .. autoautosummary:: qgis.core.QgsTestUtils
         :methods:
         :nosignatures:
 
     .. rubric:: Attributes
 
-    .. autoautosummary:: qgis.core.QgsGPSConnection
+    .. autoautosummary:: qgis.core.QgsTestUtils
         :attributes:
 

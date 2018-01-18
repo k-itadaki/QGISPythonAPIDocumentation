@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../G/index.html">G</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSDetector.html">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSInformation.html">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gps/index.html">Gps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnectionRegistry.html">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -964,8 +964,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsNmeaConnection.html">Class: QgsNmeaConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
@@ -1001,6 +1001,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStyle.html">Class: QgsStyle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsTestUtils.html">Class: QgsTestUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTolerance.html">Class: QgsTolerance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1697,8 +1698,11 @@
 <span id="class-qgsrulebasedrenderer"></span><h1>Class: QgsRuleBasedRenderer<a class="headerlink" href="#module-QgsRuleBasedRenderer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="qgis.core.QgsRuleBasedRenderer">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsRuleBasedRenderer</code><a class="headerlink" href="#qgis.core.QgsRuleBasedRenderer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsRuleBasedRenderer</code><span class="sig-paren">(</span><em>root: QgsRuleBasedRenderer.Rule</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsRuleBasedRenderer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.QgsFeatureRenderer</span></code></p>
+<p>Constructs the renderer from given tree of rules (takes ownership)</p>
+<p>QgsRuleBasedRenderer(defaultSymbol: QgsSymbol)
+Constructor for convenience. Creates a root rule and adds a default rule with symbol (takes ownership)</p>
 <p>When drawing a vector layer with rule-based renderer, it goes through
 the rules and draws features with symbols from rules that match.</p>
 <blockquote>
@@ -1982,8 +1986,9 @@ the rules and draws features with symbols from rules that match.</p>
 
 <dl class="class">
 <dt id="qgis.core.QgsRuleBasedRenderer.Rule">
-<em class="property">class </em><code class="descname">Rule</code><a class="headerlink" href="#qgis.core.QgsRuleBasedRenderer.Rule" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descname">Rule</code><span class="sig-paren">(</span><em>symbol: QgsSymbol</em>, <em>maximumScale: int = 0</em>, <em>minimumScale: int = 0</em>, <em>filterExp: str = ''</em>, <em>label: str = ''</em>, <em>description: str = ''</em>, <em>elseRule: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsRuleBasedRenderer.Rule" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">sip.wrapper</span></code></p>
+<p>Constructor takes ownership of the symbol</p>
 <p>This class keeps data about a rules for rule-based renderer.
 A rule consists of a symbol, filter expression and range of scales.
 If filter is empty, it matches all features.
@@ -2783,7 +2788,7 @@ A <code class="docutils literal"><span class="pre">scale</span></code> of 0 indi
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

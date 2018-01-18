@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class: QgsGPSInformation</title>
+  <title>Class: QgsGpsConnectionRegistry</title>
   
 
   
@@ -36,9 +36,9 @@
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
     <link rel="top" title="" href="../../../index.html"/>
-        <link rel="up" title="G" href="index.html"/>
-        <link rel="next" title="Geo" href="../Geo/index.html"/>
-        <link rel="prev" title="Class: QgsGPSDetector" href="QgsGPSDetector.html"/> 
+        <link rel="up" title="Gps" href="index.html"/>
+        <link rel="next" title="Class: QgsGpsDetector" href="QgsGpsDetector.html"/>
+        <link rel="prev" title="Class: QgsGpsConnection" href="QgsGpsConnection.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">G</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="QgsGPSDetector.html">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Gps</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -964,8 +964,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsNmeaConnection.html">Class: QgsNmeaConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
@@ -1001,6 +1001,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStyle.html">Class: QgsStyle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsTestUtils.html">Class: QgsTestUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTolerance.html">Class: QgsTolerance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1671,15 +1672,15 @@
         
           <li><a href="../index.html">core</a> &raquo;</li>
         
-          <li><a href="index.html">G</a> &raquo;</li>
+          <li><a href="index.html">Gps</a> &raquo;</li>
         
-      <li>Class: QgsGPSInformation</li>
+      <li>Class: QgsGpsConnectionRegistry</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/api/core/G/QgsGPSInformation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/api/core/Gps/QgsGpsConnectionRegistry.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -1692,14 +1693,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>Subgroup: G</p>
-<div class="section" id="module-QgsGPSInformation">
-<span id="class-qgsgpsinformation"></span><h1>Class: QgsGPSInformation<a class="headerlink" href="#module-QgsGPSInformation" title="Permalink to this headline">¶</a></h1>
+  <p>Subgroup: Gps</p>
+<div class="section" id="module-QgsGpsConnectionRegistry">
+<span id="class-qgsgpsconnectionregistry"></span><h1>Class: QgsGpsConnectionRegistry<a class="headerlink" href="#module-QgsGpsConnectionRegistry" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="qgis.core.QgsGPSInformation">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsGPSInformation</code><a class="headerlink" href="#qgis.core.QgsGPSInformation" title="Permalink to this definition">¶</a></dt>
+<dt id="qgis.core.QgsGpsConnectionRegistry">
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsGpsConnectionRegistry</code><a class="headerlink" href="#qgis.core.QgsGpsConnectionRegistry" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">sip.wrapper</span></code></p>
-<p>QgsGPSInformation(QgsGPSInformation)</p>
+<p>Constructor for QgsGpsConnectionRegistry.</p>
+<p>A class to register / unregister existing GPS connections such that the information
+is available to all classes and plugins.</p>
+<p>QgsGpsConnectionRegistry is not usually directly created, but rather accessed through
+<a class="reference internal" href="../other/QgsApplication.html#qgis.core.QgsApplication.gpsConnectionRegistry" title="qgis.core.QgsApplication.gpsConnectionRegistry"><code class="xref py py-func docutils literal"><span class="pre">QgsApplication.gpsConnectionRegistry()</span></code></a></p>
 <blockquote>
 <div><p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
@@ -1708,6 +1713,15 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGpsConnectionRegistry.connectionList" title="qgis.core.QgsGpsConnectionRegistry.connectionList"><code class="xref py py-obj docutils literal"><span class="pre">connectionList</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGpsConnectionRegistry.registerConnection" title="qgis.core.QgsGpsConnectionRegistry.registerConnection"><code class="xref py py-obj docutils literal"><span class="pre">registerConnection</span></code></a></td>
+<td>Inserts a connection into the registry.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGpsConnectionRegistry.unregisterConnection" title="qgis.core.QgsGpsConnectionRegistry.unregisterConnection"><code class="xref py py-obj docutils literal"><span class="pre">unregisterConnection</span></code></a></td>
+<td>Unregisters connection.</td>
+</tr>
 </tbody>
 </table>
 <p class="rubric">Attributes</p>
@@ -1717,160 +1731,25 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.direction" title="qgis.core.QgsGPSInformation.direction"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.direction</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.elevation" title="qgis.core.QgsGPSInformation.elevation"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.elevation</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.fixMode" title="qgis.core.QgsGPSInformation.fixMode"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.fixMode</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.fixType" title="qgis.core.QgsGPSInformation.fixType"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.fixType</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.hacc" title="qgis.core.QgsGPSInformation.hacc"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.hacc</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.hdop" title="qgis.core.QgsGPSInformation.hdop"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.hdop</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.latitude" title="qgis.core.QgsGPSInformation.latitude"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.latitude</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.longitude" title="qgis.core.QgsGPSInformation.longitude"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.longitude</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.pdop" title="qgis.core.QgsGPSInformation.pdop"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.pdop</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.quality" title="qgis.core.QgsGPSInformation.quality"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.quality</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.satInfoComplete" title="qgis.core.QgsGPSInformation.satInfoComplete"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.satInfoComplete</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.satPrn" title="qgis.core.QgsGPSInformation.satPrn"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.satPrn</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.satellitesInView" title="qgis.core.QgsGPSInformation.satellitesInView"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.satellitesInView</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.satellitesUsed" title="qgis.core.QgsGPSInformation.satellitesUsed"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.satellitesUsed</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.speed" title="qgis.core.QgsGPSInformation.speed"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.speed</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.status" title="qgis.core.QgsGPSInformation.status"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.status</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.utcDateTime" title="qgis.core.QgsGPSInformation.utcDateTime"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.utcDateTime</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.vacc" title="qgis.core.QgsGPSInformation.vacc"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.vacc</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGPSInformation.vdop" title="qgis.core.QgsGPSInformation.vdop"><code class="xref py py-obj docutils literal"><span class="pre">qgis.core.QgsGPSInformation.vdop</span></code></a></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 </div></blockquote>
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.direction">
-<code class="descname">direction</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.direction" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="qgis.core.QgsGpsConnectionRegistry.connectionList">
+<code class="descname">connectionList</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#qgis.core.QgsGpsConnectionRegistry.connectionList" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.elevation">
-<code class="descname">elevation</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.elevation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="method">
+<dt id="qgis.core.QgsGpsConnectionRegistry.registerConnection">
+<code class="descname">registerConnection</code><span class="sig-paren">(</span><em>self</em>, <em>c: QgsGpsConnection</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGpsConnectionRegistry.registerConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts a connection into the registry. The connection is owned by the registry class until it is unregistered again</p>
+</dd></dl>
 
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.fixMode">
-<code class="descname">fixMode</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.fixMode" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.fixType">
-<code class="descname">fixType</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.fixType" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.hacc">
-<code class="descname">hacc</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.hacc" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.hdop">
-<code class="descname">hdop</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.hdop" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.latitude">
-<code class="descname">latitude</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.latitude" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.longitude">
-<code class="descname">longitude</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.longitude" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.pdop">
-<code class="descname">pdop</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.pdop" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.quality">
-<code class="descname">quality</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.quality" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.satInfoComplete">
-<code class="descname">satInfoComplete</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.satInfoComplete" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.satPrn">
-<code class="descname">satPrn</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.satPrn" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.satellitesInView">
-<code class="descname">satellitesInView</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.satellitesInView" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.satellitesUsed">
-<code class="descname">satellitesUsed</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.satellitesUsed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.speed">
-<code class="descname">speed</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.speed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.status">
-<code class="descname">status</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.status" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.utcDateTime">
-<code class="descname">utcDateTime</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.utcDateTime" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.vacc">
-<code class="descname">vacc</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.vacc" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="qgis.core.QgsGPSInformation.vdop">
-<code class="descname">vdop</code><a class="headerlink" href="#qgis.core.QgsGPSInformation.vdop" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="method">
+<dt id="qgis.core.QgsGpsConnectionRegistry.unregisterConnection">
+<code class="descname">unregisterConnection</code><span class="sig-paren">(</span><em>self</em>, <em>c: QgsGpsConnection</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsGpsConnectionRegistry.unregisterConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unregisters connection. The registry does no longer own the connection</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -1886,10 +1765,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Geo/index.html" class="btn btn-neutral float-right" title="Geo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="QgsGpsDetector.html" class="btn btn-neutral float-right" title="Class: QgsGpsDetector" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="QgsGPSDetector.html" class="btn btn-neutral" title="Class: QgsGPSDetector" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="QgsGpsConnection.html" class="btn btn-neutral" title="Class: QgsGpsConnection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1898,7 +1777,7 @@
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

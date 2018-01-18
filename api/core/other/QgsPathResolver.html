@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../G/index.html">G</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSDetector.html">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSInformation.html">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gps/index.html">Gps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnectionRegistry.html">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -964,8 +964,8 @@
 <li class="toctree-l3"><a class="reference internal" href="QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsNmeaConnection.html">Class: QgsNmeaConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
@@ -1001,6 +1001,7 @@
 <li class="toctree-l3"><a class="reference internal" href="QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsStyle.html">Class: QgsStyle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsTestUtils.html">Class: QgsTestUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsTolerance.html">Class: QgsTolerance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1697,8 +1698,10 @@
 <span id="class-qgspathresolver"></span><h1>Class: QgsPathResolver<a class="headerlink" href="#module-QgsPathResolver" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="qgis.core.QgsPathResolver">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsPathResolver</code><a class="headerlink" href="#qgis.core.QgsPathResolver" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsPathResolver</code><span class="sig-paren">(</span><em>baseFileName: str = ''</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsPathResolver" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">sip.wrapper</span></code></p>
+<p>Initialize path resolver with a base filename. Null filename means no conversion between relative/absolute path</p>
+<p>QgsPathResolver(QgsPathResolver)</p>
 <p>Resolves relative paths into absolute paths and vice versa. Used for writing</p>
 <div class="versionadded">
 <p class="rubric"><span class="versionmodified">New in version 3.0: </span>Methods</p>
@@ -1766,7 +1769,7 @@ Paths written to the project file should be prepared with this method.</p>
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

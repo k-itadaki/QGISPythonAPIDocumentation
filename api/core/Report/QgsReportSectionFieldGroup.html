@@ -320,13 +320,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Font/QgsFontUtils.html">Class: QgsFontUtils</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../G/index.html">G</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnection.html">Class: QgsGPSConnection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSConnectionRegistry.html">Class: QgsGPSConnectionRegistry</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSDetector.html">Class: QgsGPSDetector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../G/QgsGPSInformation.html">Class: QgsGPSInformation</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../Geo/index.html">Geo</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnection.html">Class: QgsGeoNodeConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Geo/QgsGeoNodeConnectionUtils.html">Class: QgsGeoNodeConnectionUtils</a></li>
@@ -347,6 +340,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGml.html">Class: QgsGml</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlFeatureClass.html">Class: QgsGmlFeatureClass</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Gml/QgsGmlSchema.html">Class: QgsGmlSchema</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Gps/index.html">Gps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnection.html">Class: QgsGpsConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsConnectionRegistry.html">Class: QgsGpsConnectionRegistry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsDetector.html">Class: QgsGpsDetector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Gps/QgsGpsInformation.html">Class: QgsGpsInformation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Gradient/index.html">Gradient</a><ul>
@@ -964,8 +964,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMemoryProviderUtils.html">Class: QgsMemoryProviderUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMetadataValidator.html">Class: QgsMetadataValidator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsMimeDataUtils.html">Class: QgsMimeDataUtils</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../other/QgsNMEAConnection.html">Class: QgsNMEAConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNativeMetadataValidator.html">Class: QgsNativeMetadataValidator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsNmeaConnection.html">Class: QgsNmeaConnection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNullSymbolRenderer.html">Class: QgsNullSymbolRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsNumericScaleBarRenderer.html">Class: QgsNumericScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsObjectCustomProperties.html">Class: QgsObjectCustomProperties</a></li>
@@ -1001,6 +1001,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStatisticalSummary.html">Class: QgsStatisticalSummary</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsStyle.html">Class: QgsStyle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsSurface.html">Class: QgsSurface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../other/QgsTestUtils.html">Class: QgsTestUtils</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTicksScaleBarRenderer.html">Class: QgsTicksScaleBarRenderer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTolerance.html">Class: QgsTolerance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../other/QgsTopologyPreservingSimplifier.html">Class: QgsTopologyPreservingSimplifier</a></li>
@@ -1563,7 +1564,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTaskManagerWidget.html">Class: QgsTaskManagerWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsTransformWidget.html">Class: QgsTransformWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUnitSelectionWidget.html">Class: QgsUnitSelectionWidget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputDockWidget.html">Class: QgsUserInputDockWidget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsUserInputWidget.html">Class: QgsUserInputWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVScrollArea.html">Class: QgsVScrollArea</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVariableEditorWidget.html">Class: QgsVariableEditorWidget</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gui/other/QgsVectorFieldSymbolLayerWidget.html">Class: QgsVectorFieldSymbolLayerWidget</a></li>
@@ -1697,9 +1698,12 @@
 <span id="class-qgsreportsectionfieldgroup"></span><h1>Class: QgsReportSectionFieldGroup<a class="headerlink" href="#module-QgsReportSectionFieldGroup" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="qgis.core.QgsReportSectionFieldGroup">
-<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsReportSectionFieldGroup</code><a class="headerlink" href="#qgis.core.QgsReportSectionFieldGroup" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">qgis.core.</code><code class="descname">QgsReportSectionFieldGroup</code><span class="sig-paren">(</span><em>parentSection: QgsAbstractReportSection = None</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsReportSectionFieldGroup" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">qgis._core.QgsAbstractReportSection</span></code></p>
-<p>A report section consisting of a features</p>
+<p>Constructor for QgsReportSectionFieldGroup, attached to the specified <code class="docutils literal"><span class="pre">parent</span></code> section.
+Note that ownership is not transferred to <code class="docutils literal"><span class="pre">parent</span></code>.</p>
+<blockquote>
+<div>A report section consisting of a features</div></blockquote>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">This is not considered stable API, and may change in future QGIS releases. It is
@@ -1806,61 +1810,64 @@ exposed to the Python bindings for unit testing purposes only.</p>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">readXml</span></code></td>
 <td>Sets the item state from a DOM element.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">removeChild</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.reloadSettings" title="qgis.core.QgsReportSectionFieldGroup.reloadSettings"><code class="xref py py-obj docutils literal"><span class="pre">reloadSettings</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">removeChild</span></code></td>
 <td>Removes a child <code class="docutils literal"><span class="pre">section</span></code>, deleting it.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">removeChildAt</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">removeChildAt</span></code></td>
 <td>Removes the child section at the specified <code class="docutils literal"><span class="pre">index</span></code>, deleting it.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.reset" title="qgis.core.QgsReportSectionFieldGroup.reset"><code class="xref py py-obj docutils literal"><span class="pre">reset</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.reset" title="qgis.core.QgsReportSectionFieldGroup.reset"><code class="xref py py-obj docutils literal"><span class="pre">reset</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">row</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">row</span></code></td>
 <td>Returns the row number of the section within it’s parent section.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setBody" title="qgis.core.QgsReportSectionFieldGroup.setBody"><code class="xref py py-obj docutils literal"><span class="pre">setBody</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setBody" title="qgis.core.QgsReportSectionFieldGroup.setBody"><code class="xref py py-obj docutils literal"><span class="pre">setBody</span></code></a></td>
 <td>Sets the <code class="docutils literal"><span class="pre">body</span></code> layout for the section.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setBodyEnabled" title="qgis.core.QgsReportSectionFieldGroup.setBodyEnabled"><code class="xref py py-obj docutils literal"><span class="pre">setBodyEnabled</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setBodyEnabled" title="qgis.core.QgsReportSectionFieldGroup.setBodyEnabled"><code class="xref py py-obj docutils literal"><span class="pre">setBodyEnabled</span></code></a></td>
 <td>Sets whether the body for the section is <code class="docutils literal"><span class="pre">enabled</span></code>.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setContext</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setContext</span></code></td>
 <td>Sets the current <code class="docutils literal"><span class="pre">context</span></code> for this section.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setField" title="qgis.core.QgsReportSectionFieldGroup.setField"><code class="xref py py-obj docutils literal"><span class="pre">setField</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setField" title="qgis.core.QgsReportSectionFieldGroup.setField"><code class="xref py py-obj docutils literal"><span class="pre">setField</span></code></a></td>
 <td>Sets the <code class="docutils literal"><span class="pre">field</span></code> associated with this section.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setFooter</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setFooter</span></code></td>
 <td>Sets the <code class="docutils literal"><span class="pre">footer</span></code> for the section.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setFooterEnabled</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setFooterEnabled</span></code></td>
 <td>Sets whether the footer for the section is <code class="docutils literal"><span class="pre">enabled</span></code>.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setHeader</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setHeader</span></code></td>
 <td>Sets the <code class="docutils literal"><span class="pre">header</span></code> for the section.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">setHeaderEnabled</span></code></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">setHeaderEnabled</span></code></td>
 <td>Sets whether the header for the section is <code class="docutils literal"><span class="pre">enabled</span></code>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setLayer" title="qgis.core.QgsReportSectionFieldGroup.setLayer"><code class="xref py py-obj docutils literal"><span class="pre">setLayer</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setLayer" title="qgis.core.QgsReportSectionFieldGroup.setLayer"><code class="xref py py-obj docutils literal"><span class="pre">setLayer</span></code></a></td>
 <td>Sets the vector <code class="docutils literal"><span class="pre">layer</span></code> associated with this section.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setParentSection" title="qgis.core.QgsReportSectionFieldGroup.setParentSection"><code class="xref py py-obj docutils literal"><span class="pre">setParentSection</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setParentSection" title="qgis.core.QgsReportSectionFieldGroup.setParentSection"><code class="xref py py-obj docutils literal"><span class="pre">setParentSection</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setSortAscending" title="qgis.core.QgsReportSectionFieldGroup.setSortAscending"><code class="xref py py-obj docutils literal"><span class="pre">setSortAscending</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.setSortAscending" title="qgis.core.QgsReportSectionFieldGroup.setSortAscending"><code class="xref py py-obj docutils literal"><span class="pre">setSortAscending</span></code></a></td>
 <td>Sets whether the field values should be sorted ascending.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.sortAscending" title="qgis.core.QgsReportSectionFieldGroup.sortAscending"><code class="xref py py-obj docutils literal"><span class="pre">sortAscending</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.sortAscending" title="qgis.core.QgsReportSectionFieldGroup.sortAscending"><code class="xref py py-obj docutils literal"><span class="pre">sortAscending</span></code></a></td>
 <td>Returns true if the field values should be sorted ascending, or false for descending sort.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.type" title="qgis.core.QgsReportSectionFieldGroup.type"><code class="xref py py-obj docutils literal"><span class="pre">type</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.type" title="qgis.core.QgsReportSectionFieldGroup.type"><code class="xref py py-obj docutils literal"><span class="pre">type</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.writePropertiesToElement" title="qgis.core.QgsReportSectionFieldGroup.writePropertiesToElement"><code class="xref py py-obj docutils literal"><span class="pre">writePropertiesToElement</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsReportSectionFieldGroup.writePropertiesToElement" title="qgis.core.QgsReportSectionFieldGroup.writePropertiesToElement"><code class="xref py py-obj docutils literal"><span class="pre">writePropertiesToElement</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">writeXml</span></code></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">writeXml</span></code></td>
 <td>Stores the section state in a DOM element.</td>
 </tr>
 </tbody>
@@ -1984,6 +1991,11 @@ exposed to the Python bindings for unit testing purposes only.</p>
 <dl class="method">
 <dt id="qgis.core.QgsReportSectionFieldGroup.readPropertiesFromElement">
 <code class="descname">readPropertiesFromElement</code><span class="sig-paren">(</span><em>self</em>, <em>element: QDomElement</em>, <em>document: QDomDocument</em>, <em>context: QgsReadWriteContext</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#qgis.core.QgsReportSectionFieldGroup.readPropertiesFromElement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsReportSectionFieldGroup.reloadSettings">
+<code class="descname">reloadSettings</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.core.QgsReportSectionFieldGroup.reloadSettings" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2111,7 +2123,7 @@ or false for descending sort.</p>
 
   <div role="contentinfo">
     <p>
-      Last updated on 21:46 Jan 12, 2018.
+      Last updated on 09:17 Jan 18, 2018.
 
     </p>
   </div> 

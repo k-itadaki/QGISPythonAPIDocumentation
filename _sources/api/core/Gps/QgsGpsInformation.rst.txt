@@ -1,25 +1,25 @@
 .. package: qgis\.core
 
-Subgroup: other
+Subgroup: Gps
 
-Class: QgsNMEAConnection
+Class: QgsGpsInformation
 ...............................................
 
-.. py:module:: QgsNMEAConnection
+.. py:module:: QgsGpsInformation
 
-.. autoclass:: qgis.core.QgsNMEAConnection
+.. autoclass:: qgis.core.QgsGpsInformation
    :members:
    :undoc-members:
    :show-inheritance:
 
     .. rubric:: Methods
 
-    .. autoautosummary:: qgis.core.QgsNMEAConnection
+    .. autoautosummary:: qgis.core.QgsGpsInformation
         :methods:
         :nosignatures:
 
     .. rubric:: Attributes
 
-    .. autoautosummary:: qgis.core.QgsNMEAConnection
+    .. autoautosummary:: qgis.core.QgsGpsInformation
         :attributes:
 

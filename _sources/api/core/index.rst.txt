@@ -37,10 +37,10 @@ core
    File/index
    Fill/index
    Font/index
-   G/index
    Geo/index
    Geometry/index
    Gml/index
+   Gps/index
    Gradient/index
    Histogram/index
    Html/index
