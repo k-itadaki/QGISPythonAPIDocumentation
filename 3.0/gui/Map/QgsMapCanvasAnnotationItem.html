@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class: QgsMapCanvasAnnotationItem</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/qgis.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="" href="../../index.html"/>
+        <link rel="up" title="Map" href="index.html"/>
+        <link rel="next" title="Class: QgsMapCanvasItem" href="QgsMapCanvasItem.html"/>
+        <link rel="prev" title="Class: QgsMapCanvas" href="QgsMapCanvas.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> QGIS Python API
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">gui</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Map</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="QgsMapCanvas.html">Class: QgsMapCanvas</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Class: QgsMapCanvasAnnotationItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMapCanvasItem.html">Class: QgsMapCanvasItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMapCanvasSnappingUtils.html">Class: QgsMapCanvasSnappingUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QgsMapCanvasTracer.html">Class: QgsMapCanvasTracer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../other/index.html">other</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">QGIS Python API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">gui</a> &raquo;</li>
+        
+          <li><a href="index.html">Map</a> &raquo;</li>
+        
+      <li>Class: QgsMapCanvasAnnotationItem</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/gui/Map/QgsMapCanvasAnnotationItem.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Subgroup: Map</p>
+<div class="section" id="module-QgsMapCanvasAnnotationItem">
+<span id="class-qgsmapcanvasannotationitem"></span><h1>Class: QgsMapCanvasAnnotationItem<a class="headerlink" href="#module-QgsMapCanvasAnnotationItem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem">
+<em class="property">class </em><code class="descclassname">qgis.gui.</code><code class="descname">QgsMapCanvasAnnotationItem</code><span class="sig-paren">(</span><em>annotation: QgsAnnotation</em>, <em>mapCanvas: QgsMapCanvas</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QObject</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">qgis._gui.QgsMapCanvasItem</span></code></p>
+<p>Constructor for QgsMapCanvasAnnotationItem.</p>
+<p>An interactive map canvas item which displays a QgsAnnotation.</p>
+<div class="versionadded">
+<p class="rubric"><span class="versionmodified">New in version 3.0: </span>Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.annotation" title="qgis.gui.QgsMapCanvasAnnotationItem.annotation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotation</span></code></a></td>
+<td>Returns the item’s annotation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.boundingRect" title="qgis.gui.QgsMapCanvasAnnotationItem.boundingRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundingRect</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.childEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.childEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">childEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.connectNotify" title="qgis.gui.QgsMapCanvasAnnotationItem.connectNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">connectNotify</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.contextMenuEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.contextMenuEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contextMenuEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.cursorShapeForAction" title="qgis.gui.QgsMapCanvasAnnotationItem.cursorShapeForAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cursorShapeForAction</span></code></a></td>
+<td>Returns matching cursor shape for a mouse move action.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.customEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.customEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.disconnectNotify" title="qgis.gui.QgsMapCanvasAnnotationItem.disconnectNotify"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disconnectNotify</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragEnterEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.dragEnterEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dragEnterEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragLeaveEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.dragLeaveEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dragLeaveEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragMoveEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.dragMoveEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dragMoveEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.dropEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.dropEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dropEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.focusInEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.focusInEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">focusInEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.focusOutEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.focusOutEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">focusOutEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverEnterEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.hoverEnterEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hoverEnterEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverLeaveEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.hoverLeaveEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hoverLeaveEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverMoveEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.hoverMoveEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hoverMoveEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.inputMethodEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.inputMethodEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inputMethodEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.inputMethodQuery" title="qgis.gui.QgsMapCanvasAnnotationItem.inputMethodQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inputMethodQuery</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.isSignalConnected" title="qgis.gui.QgsMapCanvasAnnotationItem.isSignalConnected"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSignalConnected</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.itemChange" title="qgis.gui.QgsMapCanvasAnnotationItem.itemChange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">itemChange</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.keyPressEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.keyPressEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keyPressEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.keyReleaseEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.keyReleaseEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keyReleaseEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseDoubleClickEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.mouseDoubleClickEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mouseDoubleClickEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseMoveEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.mouseMoveEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mouseMoveEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.mousePressEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.mousePressEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mousePressEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseReleaseEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.mouseReleaseEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mouseReleaseEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.moveActionForPosition" title="qgis.gui.QgsMapCanvasAnnotationItem.moveActionForPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">moveActionForPosition</span></code></a></td>
+<td>Returns the mouse move behavior for a given position in scene coordinates</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.paint" title="qgis.gui.QgsMapCanvasAnnotationItem.paint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">paint</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.prepareGeometryChange" title="qgis.gui.QgsMapCanvasAnnotationItem.prepareGeometryChange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prepareGeometryChange</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.receivers" title="qgis.gui.QgsMapCanvasAnnotationItem.receivers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">receivers</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.sceneEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.sceneEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sceneEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.sceneEventFilter" title="qgis.gui.QgsMapCanvasAnnotationItem.sceneEventFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sceneEventFilter</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.sender" title="qgis.gui.QgsMapCanvasAnnotationItem.sender"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sender</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.senderSignalIndex" title="qgis.gui.QgsMapCanvasAnnotationItem.senderSignalIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">senderSignalIndex</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.setRenderContextVariables" title="qgis.gui.QgsMapCanvasAnnotationItem.setRenderContextVariables"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setRenderContextVariables</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.timerEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.timerEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timerEvent</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.updateCanvas" title="qgis.gui.QgsMapCanvasAnnotationItem.updateCanvas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCanvas</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.updateMicroFocus" title="qgis.gui.QgsMapCanvasAnnotationItem.updateMicroFocus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateMicroFocus</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.updatePosition" title="qgis.gui.QgsMapCanvasAnnotationItem.updatePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updatePosition</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.wheelEvent" title="qgis.gui.QgsMapCanvasAnnotationItem.wheelEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wheelEvent</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Signals</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.MoveFramePosition" title="qgis.gui.QgsMapCanvasAnnotationItem.MoveFramePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MoveFramePosition</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.MoveMapPosition" title="qgis.gui.QgsMapCanvasAnnotationItem.MoveMapPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MoveMapPosition</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.NoAction" title="qgis.gui.QgsMapCanvasAnnotationItem.NoAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NoAction</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameDown" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameDown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameDown</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeft" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameLeft</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftDown" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftDown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameLeftDown</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftUp" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftUp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameLeftUp</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRight" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameRight</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightDown" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightDown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameRightDown</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightUp" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightUp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameRightUp</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameUp" title="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameUp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResizeFrameUp</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="class">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.MouseMoveAction">
+<em class="property">class </em><code class="descname">MouseMoveAction</code><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.MouseMoveAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.MoveFramePosition">
+<code class="descname">MoveFramePosition</code><em class="property"> = 2</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.MoveFramePosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.MoveMapPosition">
+<code class="descname">MoveMapPosition</code><em class="property"> = 1</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.MoveMapPosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.NoAction">
+<code class="descname">NoAction</code><em class="property"> = 0</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.NoAction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameDown">
+<code class="descname">ResizeFrameDown</code><em class="property"> = 4</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameDown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeft">
+<code class="descname">ResizeFrameLeft</code><em class="property"> = 5</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftDown">
+<code class="descname">ResizeFrameLeftDown</code><em class="property"> = 9</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftDown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftUp">
+<code class="descname">ResizeFrameLeftUp</code><em class="property"> = 7</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameLeftUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRight">
+<code class="descname">ResizeFrameRight</code><em class="property"> = 6</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightDown">
+<code class="descname">ResizeFrameRightDown</code><em class="property"> = 10</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightDown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightUp">
+<code class="descname">ResizeFrameRightUp</code><em class="property"> = 8</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameRightUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameUp">
+<code class="descname">ResizeFrameUp</code><em class="property"> = 3</em><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.ResizeFrameUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.annotation">
+<code class="descname">annotation</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QgsAnnotation<a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.annotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the item’s annotation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.boundingRect">
+<code class="descname">boundingRect</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span> &#x2192; QRectF<a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.boundingRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.childEvent">
+<code class="descname">childEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.childEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.connectNotify">
+<code class="descname">connectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.connectNotify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.contextMenuEvent">
+<code class="descname">contextMenuEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.contextMenuEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.cursorShapeForAction">
+<code class="descname">cursorShapeForAction</code><span class="sig-paren">(</span><em>self</em>, <em>moveAction: QgsMapCanvasAnnotationItem.MouseMoveAction</em><span class="sig-paren">)</span> &#x2192; Qt.CursorShape<a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.cursorShapeForAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns matching cursor shape for a mouse move action.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.customEvent">
+<code class="descname">customEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.customEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.disconnectNotify">
+<code class="descname">disconnectNotify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.disconnectNotify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.dragEnterEvent">
+<code class="descname">dragEnterEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragEnterEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.dragLeaveEvent">
+<code class="descname">dragLeaveEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragLeaveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.dragMoveEvent">
+<code class="descname">dragMoveEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.dragMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.dropEvent">
+<code class="descname">dropEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.dropEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.focusInEvent">
+<code class="descname">focusInEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.focusInEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.focusOutEvent">
+<code class="descname">focusOutEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.focusOutEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.hoverEnterEvent">
+<code class="descname">hoverEnterEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverEnterEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.hoverLeaveEvent">
+<code class="descname">hoverLeaveEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverLeaveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.hoverMoveEvent">
+<code class="descname">hoverMoveEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.hoverMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.inputMethodEvent">
+<code class="descname">inputMethodEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.inputMethodEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.inputMethodQuery">
+<code class="descname">inputMethodQuery</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.inputMethodQuery" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.isSignalConnected">
+<code class="descname">isSignalConnected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.isSignalConnected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.itemChange">
+<code class="descname">itemChange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.itemChange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.keyPressEvent">
+<code class="descname">keyPressEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.keyReleaseEvent">
+<code class="descname">keyReleaseEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.keyReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.mouseDoubleClickEvent">
+<code class="descname">mouseDoubleClickEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseDoubleClickEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.mouseMoveEvent">
+<code class="descname">mouseMoveEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.mousePressEvent">
+<code class="descname">mousePressEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.mouseReleaseEvent">
+<code class="descname">mouseReleaseEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.mouseReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.moveActionForPosition">
+<code class="descname">moveActionForPosition</code><span class="sig-paren">(</span><em>self, pos: Union[QPointF, QPoint]</em><span class="sig-paren">)</span> &#x2192; QgsMapCanvasAnnotationItem.MouseMoveAction<a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.moveActionForPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the mouse move behavior for a given position in scene coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.paint">
+<code class="descname">paint</code><span class="sig-paren">(</span><em>self</em>, <em>painter: QPainter</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.prepareGeometryChange">
+<code class="descname">prepareGeometryChange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.prepareGeometryChange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.receivers">
+<code class="descname">receivers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.receivers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.sceneEvent">
+<code class="descname">sceneEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.sceneEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.sceneEventFilter">
+<code class="descname">sceneEventFilter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.sceneEventFilter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.sender">
+<code class="descname">sender</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.sender" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.senderSignalIndex">
+<code class="descname">senderSignalIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.senderSignalIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.setRenderContextVariables">
+<code class="descname">setRenderContextVariables</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.setRenderContextVariables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.timerEvent">
+<code class="descname">timerEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.timerEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.updateCanvas">
+<code class="descname">updateCanvas</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.updateCanvas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.updateMicroFocus">
+<code class="descname">updateMicroFocus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.updateMicroFocus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.updatePosition">
+<code class="descname">updatePosition</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.updatePosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="qgis.gui.QgsMapCanvasAnnotationItem.wheelEvent">
+<code class="descname">wheelEvent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qgis.gui.QgsMapCanvasAnnotationItem.wheelEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      Last updated on 20:05 Mar 26, 2018.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'3.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+   
+
+</body>
+</html>
