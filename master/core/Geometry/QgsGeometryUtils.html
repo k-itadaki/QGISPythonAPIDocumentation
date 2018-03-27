@@ -1638,6 +1638,49 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../server/index.html">server</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../server/Access/index.html">Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Access/QgsAccessControl.html">Class: QgsAccessControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Access/QgsAccessControlFilter.html">Class: QgsAccessControlFilter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../server/Buffer/index.html">Buffer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Buffer/QgsBufferServerRequest.html">Class: QgsBufferServerRequest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Buffer/QgsBufferServerResponse.html">Class: QgsBufferServerResponse</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../server/Feature/index.html">Feature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Feature/QgsFeatureFilter.html">Class: QgsFeatureFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Feature/QgsFeatureFilterProviderGroup.html">Class: QgsFeatureFilterProviderGroup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../server/Server/index.html">Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServer.html">Class: QgsServer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerException.html">Class: QgsServerException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerFilter.html">Class: QgsServerFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerInterface.html">Class: QgsServerInterface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerProjectUtils.html">Class: QgsServerProjectUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerRequest.html">Class: QgsServerRequest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerResponse.html">Class: QgsServerResponse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Server/QgsServerSettings.html">Class: QgsServerSettings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../server/Service/index.html">Service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Service/QgsService.html">Class: QgsService</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Service/QgsServiceModule.html">Class: QgsServiceModule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/Service/QgsServiceRegistry.html">Class: QgsServiceRegistry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../server/other/index.html">other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../server/other/QgsCapabilitiesCache.html">Class: QgsCapabilitiesCache</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/other/QgsConfigCache.html">Class: QgsConfigCache</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/other/QgsMapServiceException.html">Class: QgsMapServiceException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/other/QgsOgcServiceException.html">Class: QgsOgcServiceException</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../server/other/QgsRequestHandler.html">Class: QgsRequestHandler</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -1741,6 +1784,12 @@
 <tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.circleCenterRadius" title="qgis.core.QgsGeometryUtils.circleCenterRadius"><code class="xref py py-obj docutils literal notranslate"><span class="pre">circleCenterRadius</span></code></a></td>
 <td>Returns radius and center of the circle through pt1, pt2, pt3</td>
 </tr>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.circleCircleIntersections" title="qgis.core.QgsGeometryUtils.circleCircleIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">circleCircleIntersections</span></code></a></td>
+<td>Calculates the intersections points between the circle with center <code class="docutils literal notranslate"><span class="pre">center1</span></code> and radius <code class="docutils literal notranslate"><span class="pre">radius1</span></code> and the circle with center <code class="docutils literal notranslate"><span class="pre">center2</span></code> and radius <code class="docutils literal notranslate"><span class="pre">radius2</span></code>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.circleCircleOuterTangents" title="qgis.core.QgsGeometryUtils.circleCircleOuterTangents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">circleCircleOuterTangents</span></code></a></td>
+<td>Calculates the outer tangent points for two circles, centered at <code class="docutils literal notranslate"><span class="pre">center1</span></code> and <code class="docutils literal notranslate"><span class="pre">center2</span></code> and with radii of <code class="docutils literal notranslate"><span class="pre">radius1</span></code> and <code class="docutils literal notranslate"><span class="pre">radius2</span></code> respectively.</td>
+</tr>
 <tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.circleClockwise" title="qgis.core.QgsGeometryUtils.circleClockwise"><code class="xref py py-obj docutils literal notranslate"><span class="pre">circleClockwise</span></code></a></td>
 <td>Returns true if circle is ordered clockwise</td>
 </tr>
@@ -1825,7 +1874,10 @@
 <tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.sweepAngle" title="qgis.core.QgsGeometryUtils.sweepAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sweepAngle</span></code></a></td>
 <td>Calculates angle of a circular string part defined by pt1, pt2, pt3</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.verticesAtDistance" title="qgis.core.QgsGeometryUtils.verticesAtDistance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verticesAtDistance</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.tangentPointAndCircle" title="qgis.core.QgsGeometryUtils.tangentPointAndCircle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tangentPointAndCircle</span></code></a></td>
+<td>Calculates the tangent points between the circle with the specified <code class="docutils literal notranslate"><span class="pre">center</span></code> and <code class="docutils literal notranslate"><span class="pre">radius</span></code> and the point <code class="docutils literal notranslate"><span class="pre">p</span></code>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#qgis.core.QgsGeometryUtils.verticesAtDistance" title="qgis.core.QgsGeometryUtils.verticesAtDistance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verticesAtDistance</span></code></a></td>
 <td>Retrieves the vertices which are before and after the interpolated point at a specified distance along a linestring (or polygon boundary).</td>
 </tr>
 </tbody>
@@ -1921,6 +1973,43 @@ Averages two angles, correctly handling negative angles and ensuring the result 
 <dt id="qgis.core.QgsGeometryUtils.circleCenterRadius">
 <code class="descname">circleCenterRadius</code><span class="sig-paren">(</span><em>pt1: QgsPoint</em>, <em>pt2: QgsPoint</em>, <em>pt3: QgsPoint</em><span class="sig-paren">)</span> &#x2192; Tuple[float, float, float]<a class="headerlink" href="#qgis.core.QgsGeometryUtils.circleCenterRadius" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns radius and center of the circle through pt1, pt2, pt3</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsGeometryUtils.circleCircleIntersections">
+<code class="descname">circleCircleIntersections</code><span class="sig-paren">(</span><em>center1: QgsPointXY</em>, <em>radius1: float</em>, <em>center2: QgsPointXY</em>, <em>radius2: float</em><span class="sig-paren">)</span> &#x2192; Tuple[int, QgsPointXY, QgsPointXY]<a class="headerlink" href="#qgis.core.QgsGeometryUtils.circleCircleIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the intersections points between the circle with center <code class="docutils literal notranslate"><span class="pre">center1</span></code> and
+radius <code class="docutils literal notranslate"><span class="pre">radius1</span></code> and the circle with center <code class="docutils literal notranslate"><span class="pre">center2</span></code> and radius <code class="docutils literal notranslate"><span class="pre">radius2</span></code>.</p>
+<p>If found, the intersection points will be stored in <code class="docutils literal notranslate"><span class="pre">intersection1</span></code> and <code class="docutils literal notranslate"><span class="pre">intersection2</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">number of intersection points found.</td>
+</tr>
+</tbody>
+</table>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qgis.core.QgsGeometryUtils.circleCircleOuterTangents">
+<code class="descname">circleCircleOuterTangents</code><span class="sig-paren">(</span><em>center1: QgsPointXY</em>, <em>radius1: float</em>, <em>center2: QgsPointXY</em>, <em>radius2: float</em><span class="sig-paren">)</span> &#x2192; Tuple[int, QgsPointXY, QgsPointXY, QgsPointXY, QgsPointXY]<a class="headerlink" href="#qgis.core.QgsGeometryUtils.circleCircleOuterTangents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the outer tangent points for two circles, centered at <code class="docutils literal notranslate"><span class="pre">center1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">center2</span></code> and with radii of <code class="docutils literal notranslate"><span class="pre">radius1</span></code> and <code class="docutils literal notranslate"><span class="pre">radius2</span></code> respectively.</p>
+<p>The outer tangent points correspond to the points at which the two lines
+which are drawn so that they are tangential to both circles touch
+the circles.</p>
+<p>The first tangent line is described by the points
+stored in <code class="docutils literal notranslate"><span class="pre">line1P1</span></code> and <code class="docutils literal notranslate"><span class="pre">line1P2</span></code>,
+and the second line is described by the points stored in <code class="docutils literal notranslate"><span class="pre">line2P1</span></code>
+and <code class="docutils literal notranslate"><span class="pre">line2P2</span></code>.</p>
+<p>Returns the number of tangents (either 0 or 2).</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -2368,6 +2457,17 @@ Returns -1 if pt3 on the left side, 1 if pt3 is on the right side or 0 if pt3 li
 </dd></dl>
 
 <dl class="method">
+<dt id="qgis.core.QgsGeometryUtils.tangentPointAndCircle">
+<code class="descname">tangentPointAndCircle</code><span class="sig-paren">(</span><em>center: QgsPointXY</em>, <em>radius: float</em>, <em>p: QgsPointXY</em><span class="sig-paren">)</span> &#x2192; Tuple[bool, QgsPointXY, QgsPointXY]<a class="headerlink" href="#qgis.core.QgsGeometryUtils.tangentPointAndCircle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the tangent points between the circle with the specified <code class="docutils literal notranslate"><span class="pre">center</span></code> and <code class="docutils literal notranslate"><span class="pre">radius</span></code>
+and the point <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<p>If found, the tangent points will be stored in <code class="docutils literal notranslate"><span class="pre">pt1</span></code> and <code class="docutils literal notranslate"><span class="pre">pt2</span></code>.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 3.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="method">
 <dt id="qgis.core.QgsGeometryUtils.verticesAtDistance">
 <code class="descname">verticesAtDistance</code><span class="sig-paren">(</span><em>geometry: QgsAbstractGeometry</em>, <em>distance: float</em><span class="sig-paren">)</span> &#x2192; Tuple[bool, QgsVertexId, QgsVertexId]<a class="headerlink" href="#qgis.core.QgsGeometryUtils.verticesAtDistance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieves the vertices which are before and after the interpolated point at a specified distance along a linestring
@@ -2413,7 +2513,7 @@ Returns -1 if pt3 on the left side, 1 if pt3 is on the right side or 0 if pt3 li
 
   <div role="contentinfo">
     <p>
-      Last updated on 08:00 Mar 27, 2018.
+      Last updated on 19:23 Mar 27, 2018.
 
     </p>
   </div> 
