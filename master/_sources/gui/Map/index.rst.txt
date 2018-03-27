@@ -11,3 +11,24 @@ Map
    QgsMapCanvasItem
    QgsMapCanvasSnappingUtils
    QgsMapCanvasTracer
+   QgsMapLayerAction
+   QgsMapLayerActionRegistry
+   QgsMapLayerComboBox
+   QgsMapLayerConfigWidget
+   QgsMapLayerConfigWidgetFactory
+   QgsMapLayerStyleManagerWidget
+   QgsMapMouseEvent
+   QgsMapOverviewCanvas
+   QgsMapTip
+   QgsMapTool
+   QgsMapToolAdvancedDigitizing
+   QgsMapToolCapture
+   QgsMapToolEdit
+   QgsMapToolEmitPoint
+   QgsMapToolExtent
+   QgsMapToolIdentify
+   QgsMapToolIdentifyFeature
+   QgsMapToolPan
+   QgsMapToolZoom
+   QgsMapUnitScaleDialog
+   QgsMapUnitScaleWidget
